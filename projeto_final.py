@@ -5,7 +5,6 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 from dash.dependencies import Input, Output
 
-# IP para acesso http://192.168.0.109:8080/
 # Acesso em http://127.0.0.1:8080/
 
 # Iniciando a aplicação
