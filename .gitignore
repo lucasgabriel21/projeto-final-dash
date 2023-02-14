@@ -1,1 +1,4 @@
 virtual-env
+.vercelignore
+.vercel
+vercel.json
