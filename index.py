@@ -11,7 +11,7 @@ from dash.dependencies import Input, Output
 app = dash.Dash(external_stylesheets=[dbc.themes.LITERA])
 
 # Dataframe
-df = pd.read_csv('dados.csv', index_col=0)
+df = pd.read_csv('https://raw.githubusercontent.com/lucasgmalheiros/projeto-final-dash/main/dados.csv', index_col=0)
 df.rename(columns={'País': 'Pais', 'Preço Médio': 'Preco Medio', 'Número': 'Numero'}, inplace=True)
 
 # Mapa
@@ -155,4 +155,4 @@ def update_graph(check):
 
 # Inicialização do servidor
 if __name__ == '__main__':
-    app.run_server(host='0.0.0.0', debug=True, port=8080)
+    app.run_server(debug=False)
